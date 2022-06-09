@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --medium-font-size: 1.2em;
+    --big-font-size: 2.5em;
+    --input-padding: 10px 25px;
+    --border-radius: 8px;
+    --margin-bottom: 10px;
+    --margin-top: ;
+    --padding: 20px;
+    --border: 2px solid grey;
+    --misc-color: steelblue;
+    --custom-color: grey;
+}
+
+body{
+    font-size: 16px;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+
+
+body{
+    background: url(images/port1.jpg);
+    background-size: cover;
+}
+
+.body1{
+    background: url(images/port2.jpg);
+    background-size: cover;
+}
+
+.body2{
+    background: url(images/port5.jpg);
+    background-size: cover;
+}
+
+.body3{
+    background: url(images/port4.jpg);
+}
+
+
+.container{
+    width: 1200px;
+    max-width: 100%;
+    min-height: 400px;
+    margin: auto auto;
+    color: rgb(14, 10, 10);
+    position: relative;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.form{
+    width: 60%;
+    margin: 0 auto;
+    padding: var(--padding);
+    margin-top: 10%;
+    margin-left: auto 30%;
+}
+
+.form_group{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input{
+    padding: var(--input-padding);
+    border-radius: var(--border-radius);
+    margin-bottom: var(--margin-bottom);
+    transition: 0.3s;
+}
+
+select{
+    padding: var(--input-padding);
+    border-radius: var(--border-radius);
+    border: var(--border);
+}
+
+.btn:hover{
+    background: rgb(24, 90, 145);
+    transition: 0.3s;
+}
+
+.btn{
+    margin-top: 8px;
+    width: 100%;
+    border: none;
+    padding: 14px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    background-color: var(--misc-color);
+    color: white;
+}
+
+.form_label{
+    color: rgb(17, 14, 14);
+    font-size: var(--medium-font-size);
+    color: rgb(17, 14, 14);
+}
+
+input::placeholder{
+    font-size: medium;
+}
+
+textarea::placeholder{
+    font-size: var(--medium-font-size);
+}
+
+input:focus{
+    outline-color: grey;
+    transition: 0.3s;
+}
+
+textarea:focus{
+    outline-color: grey;
+    transition: 0.3s;
+}
+
+#message{
+    border: 2px solid steelblue;
+    border-radius: var(--border-radius);
+    padding: var(--input-padding);
+
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+    color:rgb(48, 43, 43);
+    justify-content: center;
+}
+
+.h2{
+    color: rgb(17, 14, 14);
+    margin-bottom: 10px;
+}
+
+@media (max-width:840px) {
+    .form{
+        width: 100%;
+    }
+
+    .about_container{
+        width: 100%;
+    }
+}
+
+.nav{ 
+    display: block; 
+    height: 30px; 
+    line-height: 30px; 
+    text-align: right;
+} 
+
+.nav ul{ 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+} 
+
+.nav li{ 
+    float: right; 
+} 
+
+.nav li a { 
+    display: inline-block;
+    text-align: right; 
+    padding: 14px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 20px;
+}
+
+.nav li a:hover{
+    color: rgb(175, 122, 224);
+} 
+
+
+
+/* about me page */
+
+.about_container{
+    width: 1200px;
+    max-width: 100%;
+    min-height: 400px;
+    margin: auto auto;
+    color: white;
+    font-size: 20px;
+    font-weight: 20px;
+    position: relative;
+    margin-left: auto;
+    margin-right:auto;
+    justify-content: space-around;
+}
+
+.hub{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    justify-content: space-around;
+    background: grey;
+    background-size: cover;
+}
+
+.yes{
+    justify-content: space-between;
+    background: grey;
+    background-size: cover;
+}
+
+.hero{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pro{
+    display: inline-block;
+    border: 1px soild green;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+    justify-content: space-around;
+    background: grey;
+}
+/* Trial Css */
+/* .container{ */
+    /* margin-top: 20px; */
+    /* display: flex; */
+    /* width: 800px; */
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+/* } */
+/* .div{ */
+   /* display:flex; */
+   /* border: 1px solid green; */
+   /* flex-direction: row; */
+   /* flex-wrap: wrap; */
+   /* text-align: center; */
+   /* height: 60px; */
+   /* width: 100px; */
+/* } */
+/*  */
+/* .div{ */
+    /* justify-content: space-around; */
+    /* margin:0 ; */
+/* } */
+/*  */
+/* .div1{ */
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: space-evenly; */
+/* } */
+/*  */
+/* .d{ */
+    /* margin-top: 20px; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+/* } */
+
+.yes{
+    color: white;
+}
+
+.div{
+    border: none;
+    text-decoration: none;
+}
+
+.btn2{
+    background: white;
+    margin-top: 8px;
+    width: 100%;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.btn2:hover{
+    background: rgb(24, 90, 145);
+    transition: 0.3s;
+}
+
+.btn1:hover{
+    background: rgb(24, 90, 145);
+    transition: 0.3s;
+}
+
+.btn1{
+    margin-top: 8px;
+    width: 100%;
+    border: none;
+    padding: 14px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    background-color: var(--misc-color);
+    color: white;
+    text-decoration: none;
+}
+button{
+    text-decoration: none;
+}
+
+.footer{
+    color: white;
+    margin-top: 70px;
+    margin-left: 20px;
+
+}
+    
